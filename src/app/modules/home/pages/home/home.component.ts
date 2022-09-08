@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   public Clicked() {
-    let quoteNumber = this.getRandomInt(1, 5)
+    let quoteNumber = this.getRandomInt(1, 6)
 
     this.playAudio(quoteNumber);
     console.log(this.showLyrics)
@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit {
         break
       case 5:
         this.Quotes[4] = ["Malenia", 1]
-        this.animationLyrics = ""
+        this.animationLyrics = "I dreamt for so long. My flesh was dull gold...and my blood, rotted. Corpse after corpse, left in my wake... As I awaited... his return. ... Heed my words. I am Malenia. Blade of Miquella. And I have never known defeat."
     }
   }
 
