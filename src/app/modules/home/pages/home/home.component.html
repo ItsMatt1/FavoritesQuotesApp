@@ -1,1 +1,13 @@
-<button type="button" class="button" (click)="teste()">Random Quote</button>
+<div class="container">
+    <div class="texto">
+        <p> Welcome to my favorite quotes website, just click on the button to play a random quote!</p>
+    </div>
+
+    <button type="button" class="button" (click)="Clicked()">Random Quote</button>
+
+    <div *ngIf="showLyrics == true" class="lyrics">
+        <p>
+            {{animationLyrics}}
+        </p>
+    </div>
+</div>

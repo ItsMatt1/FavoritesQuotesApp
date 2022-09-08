@@ -9,7 +9,16 @@
     // display: inline-block;
     font-size: 16px;
   }
+  
+  .container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 
-.backgrounde{
-    background-color: black;
+    .app-root{
+        text-align: center;
+    }
 }
