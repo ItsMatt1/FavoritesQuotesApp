@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
 .button {
     background-color: #b645a7; /* Green */
@@ -9,7 +10,6 @@
     text-decoration: none;
     // display: inline-block;
     font-size: 16px;
-    align-self: center;
     justify-content: center;
     cursor:pointer;
   }
@@ -21,7 +21,8 @@
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-
+    text-align: center;
+    justify-content: center;
     .app-root {
         text-align: center;
     }
@@ -31,43 +32,16 @@
     }
 
     .lyrics {
-      color: black;
+      color: white;
+      font-family: "Montserrat Medium";
+      max-width: 40ch;
+      text-align: center;
+      transform: scale(0.94);
+      animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
     }
 }
 
-// img {
-//   position: relative;
-//   max-width: 100%;
-//   height: 100%;
-//   z-index: 100;
-// }
-
-// .image-fader {
-//   width: 300px;
-//   height: 300px;
-//   z-index: 100;
-// }
-
-// .image-fader img {
-//   position: absolute;
-//   top: 0px;
-//   left: 0px;
-//   animation-name: imagefade;
-//   animation-timing-function:linear;
-//   animation-duration: 5s;
-// }
-
-// @keyframes imagefade {
-//   0%{opacity: 0;}
-//   100%{opacity: 1;}
-// }
-
-// .image-fader img:nth-of-type(1) {
-//   animation-delay: 0s;
-// }
-// .image-fader img:nth-of-type(2) {
-//   animation-delay: 5s;
-// }
+//IMAGE ANIMATION
 
 @keyframes crossFade{
   0%{opacity: 0;}
@@ -80,7 +54,7 @@
   left:0;
   opacity: 0;
   animation-name: crossFade;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-iteration-count: 1;
   animation-fill-mode: backwards;
 }
@@ -88,6 +62,125 @@
   animation-delay: 0s;
 }
 #cf img:nth-last-of-type(2){
-  animation-delay: 5s;
+  animation-delay: 2.5s;
  
+}
+
+// LYRICS
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Montserrat Medium";
+  max-width: 40ch;
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.95s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 2.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 2.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 2.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 2.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+  animation: fade-in 0.8s 2.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+  animation: fade-in 0.8s 2.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+// span:nth-child(14) {
+//   animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+// }
+
+// span:nth-child(15) {
+//   animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+// }
+
+// span:nth-child(16) {
+//   animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+// }
+
+// span:nth-child(17) {
+//   animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+// }
+
+// span:nth-child(18) {
+//   animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+// }
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+
+span {
+  margin: 5px;
 }

@@ -12,9 +12,10 @@
     <button type="button" class="button" (click)="Clicked()">Random Quote</button>
 
     <div *ngIf="showLyrics == true" class="lyrics">
-        <p>
-            {{animationLyrics}}
-        </p>
+        <h1>
+            <!-- {{animationLyrics}} -->
+            <span *ngFor="let item of animationLyrics">{{item}}</span>
+        </h1>
     </div>
 
     <app-open-close></app-open-close>
